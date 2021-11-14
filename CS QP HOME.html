@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf=8">
+    <title>Fishy News</title>
+    <style>
+        body {
+            width: 95%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #3f3f3f;
+            font-family: 'Rubik', sans-serif;
+        }
+        ul {
+            background-color: #707070;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            display: inline;
+            float: left;  
+        }
+        a {
+            display: block;
+            padding: 8px;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #e9aa8b;
+        }
+        .active {
+            background-color: #5993ff;
+        }
+        #header img {
+            width: 100%;
+            height: 1500;
+            object-fit: cover;
+            margin-bottom: 0px;
+        }
+        #content-left {
+            width: 29%;
+            height: 700px;
+            background-color: #858585;
+            float: left;
+            margin-top: 30px;
+            margin-right: 30px;
+            vertical-align: top;
+            color: white
+            
+        }
+        #content-middle {
+            width: 34%;
+            height: 700px;
+            background-color: #858585;
+            display: inline-block;
+            margin-top: 30px;
+            padding-right: 1px;
+            vertical-align: top;
+            color: white;
+
+        }
+        #content-right {
+            width: 34%;
+            height: 700px;
+            background-color: #858585;
+            float: left;
+            border-right: 3px solid #78a5bf; 
+            margin-top: 30px;
+            padding-left: 0px;
+            color: white;
+
+        }
+        #footer {
+            width: 92%;
+            height: 100px;
+            background-color: #858585;
+            float: left;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: white;
+            
+            
+        }
+        #foot {
+            width: 8%;
+            height: 100px;
+            float: left;
+            background-color: #ffc3a6;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+        }
+        #nav {
+            position: sticky;
+            top: 0;
+
+        }
+        #content-left h1 {
+            padding-left: 15px;
+
+        }
+        #cloud {
+            width: 30px;
+            height: 30px;
+
+        }
+        #weather {
+            margin-right: 15px;
+            margin-left: 15px;
+
+        }
+        #fan {
+            width: 95%;
+            height: 35%;
+            margin-left: 10px;
+            margin-right: 10px
+
+        }
+        h2 {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 20px;
+
+        }
+        #content-left li a {
+            color: #333
+
+        }
+        #pengwing {
+            margin-left: 15px;
+            margin-right: 15px;
+
+        }
+        #sci {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 15px;
+
+        }
+        #tube {
+            width: 40px;
+            height: 40px;
+
+        }
+        #pingu {
+            width: 400px;
+            height: 250px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+
+        }
+        #penguin {
+            margin-top: 20px;
+
+        }
+        #pengwing a {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #reed {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #rmore {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #rmoore {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #phone {
+            width: 90px;
+            height: 24px;
+
+        }
+        #content-middle a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+
+        }
+        #content-middle h1 {
+            margin-left: 15px;
+            margin-right: 15px;
+
+        }
+        #content-middle p {
+            margin-left: 15px;
+            margin-right: 15px;
+
+        }
+        #middle-head {
+            background-color:#5993ff;
+            padding-top: 8px;
+            margin-top: 0px;
+
+        }
+        #right-head {
+            background-color:#5993ff;
+            padding-top: 4px;
+            margin-top: 0px;
+
+        }
+        #left-head {
+            background-color:#ffc3a6;
+            padding-top: 8px;
+            margin-top: 0px;
+
+        }
+        #foot h1 {
+            text-align: center;
+
+        }
+        #footer p {
+            text-align: left;
+            margin-left: 10px;
+
+        }
+        #ucantcme {
+            width: 50%;
+            height: 100px;
+            text-align: left;
+            display: inline-block;
+            border-right: 2px solid #5993ff;
+            margin-bottom: 0px;
+
+        }
+        #elongatedmusk {
+            width: 48%;
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 0px;
+
+        }
+        #quickn {
+            font-size: 1.8em;
+
+        }
+        #redmore {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #readmoreh {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+        }
+        .active {
+            background-color: #e9aa8b;
+        }
+        .aboot {
+            background-color:#5993ff
+        } 
+        #content-right h1 {
+            font-family: 'Quicksand', sans-serif;
+        }
+        #content-left h1 {
+            font-family: 'Quicksand', sans-serif;
+        }
+        #content-middle h1 {
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+
+        </style>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id=header>
+        <img src="Fishy (2000 x 150 px) (1550 x 150 px) (1550 x 250 px).png" alt="fishy banner">
+    </div>
+    <div id=nav>
+        <ul>
+            <li><a class= active href="CS3 1QP HOME.html">Home</a></li>
+            <li><a href="CS3 1QP SPORTS.html">Sports</a></li>
+            <li><a href="CS3 1QP TECH.html">Technology</a></li>
+            <li><a href="CS3 1QP GAMING.html">Gaming</a></li>
+            <li><a href="CS3 1QP CONTACT.html">Contact Us</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Main_Page">Our Totally Reliable Source</a></li>
+            <li style="float:right"><a class=aboot href="CS3 1QP ABOUT.html">About</a></li>
+          </ul>
+    </div>
+
+
+    <div id=content>
+        <div id=content-left>
+            <div id=left-head>
+            <h1>
+               WEATHER
+               <img id=cloud src="https://pic.onlinewebfonts.com/svg/img_397491.png" alt="cloud">
+            </h1>
+            </div>
+            <h2>
+                Temperatures reach a record high in the Philippines
+            </h2>
+            <p id=weather>
+                Scientists worldwide are baffled as temperatures in the Philippines reach a skin-melting 100 degrees
+                 celcius. Air Conditioning prices skyrocket as people are panic buying to avoid the heat. "I Feel like lechon" One resident says.
+                 <a id=reed href="#more">Read More...</a>
+            </p>
+
+            <img id=fan src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/01/iStock-1162624130_thumb-732x549.jpg" alt="fan">
+        </div>
+
+        <div id=content-middle>
+            <div id=middle-head>
+            <h1>
+                TECHNOLOGY
+                <img id=phone src="https://cdn.pixabay.com/photo/2019/01/06/16/12/samsung-3917310_1280.png" alt="cloud">
+            </h1>
+            </div>
+            <h2>
+                Pear unveils all new Pear ePhone 15 Pro
+            </h2>
+            <p>
+                Steve Jobless from Pear announces the new ePhone 15 Pro which he states is "More pro than before" 
+                The new phone contains 10 cameras all with different uses such as infared, 1000x telescopic, heat sensing, 
+                and  many more. It also captures videos in 16k mega HD. It has seemed to have received negative backlash from the public 
+                with comments such as "As big as a PC" "Battery drains in a second" and "You can cook eggs with the heat".
+            </p>
+            <p id=jobless>
+                Steve Jobless is yet to make a statement concerning this.
+                <a id=rmore href="#more">Read More...</a>
+            </p>
+            
+        <div id=boastun>
+            <h2>
+                Robotics giant Boastun Dynamics shows off new "Poo B Gone"
+            </h2>
+            <p>
+                Robotics company Boastun Dynamics has unveiled a new robot called the "Poo B Gone". This new robot 
+                is said to have the most efficient anus wiping technology equipped with the latest sensors and chips. 
+
+            </p>
+            <p>
+                It is still yet to be publicly tested but if it works as advertised, 
+                this could be one of the greatest advancements of the human race.
+                <a id=rmoore href="#moare">Read More...</a>
+            </p>
+            </div>
+        </div>
+
+        <div id=content-right>
+            <div id=right-head>
+            <h1 id=sci>
+                SCIENCE
+                <img id=tube src="https://iconarchive.com/download/i97209/iconsmind/outline/Test-Tube-2.ico" alt="testtube">
+            </h1>
+            </div>
+            <h2>
+                Scientists have discovered a new species of sentient featherless chickens in Antarctica
+            </h2>
+
+            
+            <div id=penguin>
+                <img id=pingu src="https://media.wired.com/photos/5f2d7c2191d87e6680b80936/4:3/w_2132,h_1599,c_limit/Science_climatedesk_453801484.jpg" alt="pingu">
+            </div>
+
+            <p id=pengwing>
+                After a recent expedition to Antarctica, scientists have recently discovered a new species of what seems 
+                to be like a flightless bird with very short feathers that seems to waddle around. "It's so freaking cute i want 
+                to squeeze it." notes one scientist. It is seen to have a large head, short neck, and elongated body. 
+                The tail is short, stiff, and wedge-shaped. The legs and webbed feet are set far back on the body, 
+                which gives it their upright posture on land.
+                <a id=readmore href="#rmore">Read More...</a>
+            </p>
+    </div>
+
+
+    <div id=foot>
+        <h1 id=quickn>QUICK NEWS</h1>
+    </div>
+    <div id=footer>
+       <div id=ucantcme>
+        <p>
+            Famous wrestler and actor John Cena is still nowhere to be found after saying his signature catchphrase "You can't see me" in front of a crowd.
+       </p>
+       <p>
+        <a id=redmore href="#redmore">Read more...</a>
+       </p>
+
+    </div>
+    <div id=elongatedmusk>
+        <p>
+            Elongated Muskrat (also known as Elon Musk) has promised to colonize the sun by 2078 saying "It's a great way to get a tan".
+        </p>
+        <p>
+            <a id=readmoreh href="#reedmore">Read more...</a>
+        </p>
+    </div>
+    </div>
+</body>
+

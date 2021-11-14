@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf=8">
+    <title>Fishy News Gaming</title>
+    <style>
+        body {
+            width: 95%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #3f3f3f;
+            font-family: 'Rubik', sans-serif;
+        }
+        ul {
+            background-color: #707070;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            display: inline;
+            float: left;  
+        }
+        a {
+            display: block;
+            padding: 8px;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #e9aa8b;
+        }
+        .active {
+            background-color: #5993ff;
+        }
+        #header img {
+            width: 100%;
+            height: 1500;
+            object-fit: cover;
+            margin-bottom: 0px;
+        }
+        #content-left {
+            width: 29%;
+            height: 700px;
+            background-color: #858585;
+            float: left;
+            margin-top: 30px;
+            margin-right: 30px;
+            vertical-align: top;
+            color: white
+            
+        }
+        #content-middle {
+            width: 34%;
+            height: 700px;
+            background-color: #858585;
+            display: inline-block;
+            margin-top: 30px;
+            padding-right: 1px;
+            vertical-align: top;
+            color: white;
+
+        }
+        #content-right {
+            width: 34%;
+            height: 700px;
+            background-color: #858585;
+            float: left;
+            border-right: 3px solid #78a5bf; 
+            margin-top: 30px;
+            padding-left: 0px;
+            color: white;
+
+        }
+        #footer {
+            width: 92%;
+            height: 100px;
+            background-color: #858585;
+            float: left;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: white;
+            
+            
+        }
+        #foot {
+            width: 8%;
+            height: 100px;
+            float: left;
+            background-color: #ffc3a6;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+        }
+        #nav {
+            position: sticky;
+            top: 0;
+
+        }
+        #content-left h1 {
+            padding-left: 15px;
+
+        }
+        #cloud {
+            width: 30px;
+            height: 30px;
+
+        }
+        #weather {
+            margin-right: 15px;
+            margin-left: 15px;
+
+        }
+        #fan {
+            width: 95%;
+            height: 30%;
+            margin-left: 10px;
+            margin-right: 10px
+
+        }
+        h2 {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 20px;
+
+        }
+        #content-left li a {
+            color: #333
+
+        }
+        #pengwing {
+            margin-left: 15px;
+            margin-right: 15px;
+
+        }
+        #sci {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 15px;
+
+        }
+        #tube {
+            width: 30px;
+            height: 30px;
+
+        }
+        #pingu {
+            width: 400px;
+            height: 250px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+
+        }
+        #penguin {
+            margin-top: 20px;
+
+        }
+        #reed {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #rmore {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #rmoore {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #phone {
+            width: 30px;
+            height: 30px;
+
+        }
+        #content-middle a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+
+        }
+        #content-middle h1 {
+            margin-left: 15px;
+            margin-right: 15px;
+
+        }
+        #content-middle p {
+            margin-left: 15px;
+            margin-right: 15px;
+
+        }
+        #middle-head {
+            background-color:#ffa033;
+            padding-top: 8px;
+            margin-top: 0px;
+
+        }
+        #right-head {
+            background-color:#87e470;
+            padding-top: 14px;
+            margin-top: 0px;
+
+        }
+        #left-head {
+            background-color:#ff251d;
+            padding-top: 8px;
+            margin-top: 0px;
+
+        }
+        #foot h1 {
+            text-align: center;
+
+        }
+        #footer p {
+            text-align: left;
+            margin-left: 10px;
+
+        }
+        #ucantcme {
+            width: 50%;
+            height: 100px;
+            text-align: left;
+            display: inline-block;
+            border-right: 2px solid #5993ff;
+            margin-bottom: 0px;
+
+        }
+        #elongatedmusk {
+            width: 48%;
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 0px;
+
+        }
+        #quickn {
+            font-size: 1.8em;
+
+        }
+        #redmore {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #readmoreh {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+        }
+        .active {
+            background-color: #e9aa8b;
+        }
+        .aboot {
+            background-color:#5993ff
+        }
+        #dongab {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #left-head h1 {
+            font-family: 'Quicksand', sans-serif;
+        }
+        #france {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #francea {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600
+        }
+        #middle-head h1 {
+            font-family: 'Quicksand', sans-serif;
+        }
+        #right-head h1 {
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+
+        </style>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id=header>
+        <img src="Fishy (2000 x 150 px) (1550 x 150 px) (1550 x 250 px).png" alt="fishy banner">
+    </div>
+    <div id=nav>
+        <ul>
+            <li><a href="CS3 1QP HOME.html">Home</a></li>
+            <li><a href="CS3 1QP SPORTS.html">Sports</a></li>
+            <li><a href="CS3 1QP TECH.html">Technology</a></li>
+            <li><a class= active href="CS3 1QP GAMING.html">Gaming</a></li>
+            <li><a href="CS3 1QP CONTACT.html">Contact Us</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Main_Page">Our Totally Reliable Source</a></li>
+            <li style="float: right"><a class=aboot href="CS3 1QP ABOUT.html">About</a></li>
+          </ul>
+    </div>
+
+
+    <div id=content>
+        <div id=content-left>
+            <div id=left-head>
+            <h1>
+               LATEST NEWS
+            </h1>
+            </div>
+            <img id=fan src="https://cdn.mos.cms.futurecdn.net/JW4grBJUxwfEcJYJofXy6A-1024-80.jpg.webp" alt="fan">
+            <h2>
+                Battlefield 2042's new hovercraft can drive straight up buildings
+            </h2>
+            <p id=weather>
+                It wouldn't be a new Battlefield launch without some day one shenanigans, and so far, my favorite one concerns 
+                Battlefield 2042's hovercrafts. Normal hovercrafts can smoothly navigate over land and sea, but Battlefield's turret-mounted 
+                hovercrafts go one step further.
+                <p id=dongab>
+                    If you finesse it just right, you can drive one of these babies up a damn building (as first spotted by Redditor ztsnyder)
+                </p>
+                <a id=reed href="https://www.pcgamer.com/battlefield-2042s-new-hovercraft-can-climb-straight-up-walls/">Read More...</a>
+            </p>
+
+        </div>
+
+        <div id=content-middle>
+            <div id=middle-head>
+            <h1>
+                GAMES
+                <img id=phone src="https://www.pngall.com/wp-content/uploads/5/Video-Game-Controller-PNG-Picture.png" alt="cloud">
+            </h1>
+            </div>
+            <h2>
+                Here are all the games you can grab for free right now
+            </h2>
+            <p>
+                There are lot of free games floating around there right now, from Epic's weekly freebies to publisher promos on Steam, GOG sale 
+                giveaways, and more. But staying on top of them all can be a real chore, and you might be missing out on some good stuff.
+                <p>
+                    So we here at Fishy News Gaming have decided to help, with this list of every free game that crosses our screens. 
+                    The goal is to help you find games that usually cost money, so free-to-keep and temporary promotions will be 
+                    included and noted as such, but free-to-play games and others that are normally free won't be. for that, be sure to take a 
+                    look at our breakdown of the best free PC games.
+                </p>
+            </p>
+            <p id=jobless>
+                <a id=rmore href="https://www.pcgamer.com/uk/here-are-all-the-free-games-you-can-grab-right-now/">Read More...</a>
+            </p>
+            
+        <div id=boastun>
+            <h2>
+                Bibleman, the superhero who does whatever a Bible can
+            </h2>
+            <p>
+                There's probably a reason why the end of the games demo says "you can buy it at your local Christian 
+                retailer". And you won't find many goofier attempts to mix religion with gaming. It's... 
+                it's quite something.
+            </p>
+            <p>
+                <a id=rmoore href="https://www.pcgamer.com/uk/saturday-crapshoot-bibleman/">Read More...</a>
+            </p>
+            </div>
+        </div>
+
+        <div id=content-right>
+            <div id=right-head>
+            <h1 id=sci>
+                HARDWARE
+                <img id=tube src="https://cdn.pixabay.com/photo/2017/04/18/01/28/computer-2237420_1280.png" alt="testtube">
+            </h1>
+            </div>
+            <h2>
+                Microsoft is finally pushing out the Windows 11 update that solves AMD's performance problem
+            </h2>
+
+            
+            <div id=penguin>
+                <img id=pingu src="https://cdn.mos.cms.futurecdn.net/GGN32GYmGaGFgR92NFRtf6-1024-80.jpg.webp" alt="pingu">
+            </div>
+
+            <p id=pengwing>
+                Microsoft has released a cumulative update (KB5007215) for Windows 11, and with it, AMD can finally put the ropey performance 
+                at launch to bed. The fix for the L3 Cache problem has been resolved, and should now be rolling out to machines everywhere, 
+                along with security updates and patches for other Windows 11 problems.
+                <a id=francea href="https://www.pcgamer.com/microsoft-is-finally-pushing-out-the-windows-11-update-that-solves-amds-performance-problem/">Read More...</a>
+            </p>
+    </div>
+
+
+    <div id=foot>
+        <h1 id=quickn>QUICK NEWS</h1>
+    </div>
+    <div id=footer>
+       <div id=ucantcme>
+        <p>
+            The 50 most iconic characters in PC gaming
+       </p>
+       <p>
+        <a id=redmore href="https://www.pcgamer.com/uk/the-50-most-iconic-characters-in-pc-gaming/">Read more...</a>
+       </p>
+
+    </div>
+    <div id=elongatedmusk>
+        <p>
+            The fastest cars in Forza Horizon 5
+        </p>
+        <p>
+            <a id=readmoreh href="https://www.pcgamer.com/uk/forza-horizon-5-best-fastest-cars/">Read more...</a>
+        </p>
+    </div>
+    </div>
+</body>
+

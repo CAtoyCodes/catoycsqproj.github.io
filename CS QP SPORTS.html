@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf=8">
+    <title>Fishy News Sports</title>
+    <style>
+        body {
+            width: 95%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #3f3f3f;
+            font-family: 'Rubik', sans-serif;
+        }
+        ul {
+            background-color: #707070;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            display: inline;
+            float: left;  
+        }
+        a {
+            display: block;
+            padding: 8px;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #e9aa8b;
+        }
+        .active {
+            background-color: #5993ff;
+        }
+        #header img {
+            width: 100%;
+            height: 1500;
+            object-fit: cover;
+            margin-bottom: 0px;
+        }
+        #content-left {
+            width: 29%;
+            height: 700px;
+            background-color: #858585;
+            float: left;
+            margin-top: 30px;
+            margin-right: 30px;
+            vertical-align: top;
+            color: white
+            
+        }
+        #content-middle {
+            width: 34%;
+            height: 700px;
+            background-color: #858585;
+            display: inline-block;
+            margin-top: 30px;
+            padding-right: 1px;
+            vertical-align: top;
+            color: white;
+
+        }
+        #content-right {
+            width: 34%;
+            height: 700px;
+            background-color: #858585;
+            float: left;
+            border-right: 3px solid #78a5bf; 
+            margin-top: 30px;
+            padding-left: 0px;
+            color: white;
+
+        }
+        #footer {
+            width: 92%;
+            height: 100px;
+            background-color: #858585;
+            float: left;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: white;
+            
+            
+        }
+        #foot {
+            width: 8%;
+            height: 100px;
+            float: left;
+            background-color: #ffc3a6;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+        }
+        #nav {
+            position: sticky;
+            top: 0;
+
+        }
+        #content-left h1 {
+            padding-left: 15px;
+
+        }
+        #cloud {
+            width: 30px;
+            height: 30px;
+
+        }
+        #weather {
+            margin-right: 15px;
+            margin-left: 15px;
+
+        }
+        #fan {
+            width: 95%;
+            height: 30%;
+            margin-left: 10px;
+            margin-right: 10px
+
+        }
+        h2 {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 20px;
+
+        }
+        #content-left li a {
+            color: #333
+
+        }
+        #pengwing {
+            margin-left: 15px;
+            margin-right: 15px;
+
+        }
+        #sci {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 15px;
+
+        }
+        #tube {
+            width: 30px;
+            height: 30px;
+
+        }
+        #pingu {
+            width: 400px;
+            height: 250px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+
+        }
+        #penguin {
+            margin-top: 20px;
+
+        }
+        #reed {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #rmore {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #rmoore {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #phone {
+            width: 30px;
+            height: 30px;
+
+        }
+        #content-middle a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+
+        }
+        #content-middle h1 {
+            margin-left: 15px;
+            margin-right: 15px;
+
+        }
+        #content-middle p {
+            margin-left: 15px;
+            margin-right: 15px;
+
+        }
+        #middle-head {
+            background-color:#ffa033;
+            padding-top: 8px;
+            margin-top: 0px;
+
+        }
+        #right-head {
+            background-color:#87e470;
+            padding-top: 14px;
+            margin-top: 0px;
+
+        }
+        #left-head {
+            background-color:#ff251d;
+            padding-top: 8px;
+            margin-top: 0px;
+
+        }
+        #foot h1 {
+            text-align: center;
+
+        }
+        #footer p {
+            text-align: left;
+            margin-left: 10px;
+
+        }
+        #ucantcme {
+            width: 50%;
+            height: 100px;
+            text-align: left;
+            display: inline-block;
+            border-right: 2px solid #5993ff;
+            margin-bottom: 0px;
+
+        }
+        #elongatedmusk {
+            width: 48%;
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 0px;
+
+        }
+        #quickn {
+            font-size: 1.8em;
+
+        }
+        #redmore {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+
+        }
+        #readmoreh {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600;
+        }
+        .active {
+            background-color: #e9aa8b;
+        }
+        .aboot {
+            background-color:#5993ff
+        }
+        #dongab {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #left-head h1 {
+            font-family: 'Quicksand', sans-serif;
+        }
+        #france {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #francea {
+            text-decoration: none;
+            color: #ffc3a6;
+            font-weight: 600
+        }
+        #middle-head h1 {
+            font-family: 'Quicksand', sans-serif;
+        }
+        #right-head h1 {
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+
+        </style>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id=header>
+        <img src="Fishy (2000 x 150 px) (1550 x 150 px) (1550 x 250 px).png" alt="fishy banner">
+    </div>
+    <div id=nav>
+        <ul>
+            <li><a href="CS3 1QP HOME.html">Home</a></li>
+            <li><a class=active href="CS3 1QP SPORTS.html">Sports</a></li>
+            <li><a href="CS3 1QP TECH.html">Technology</a></li>
+            <li><a href="CS3 1QP GAMING.html">Gaming</a></li>
+            <li><a href="CS3 1QP CONTACT.html">Contact Us</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Main_Page">Our Totally Reliable Source</a></li>
+            <li style="float: right"><a class=aboot href="CS3 1QP ABOUT.html">About</a></li>
+          </ul>
+    </div>
+
+
+    <div id=content>
+        <div id=content-left>
+            <div id=left-head>
+            <h1>
+               BOXING
+               <img id=cloud src="https://cdn.onlinewebfonts.com/svg/img_445568.png" alt="cloud">
+            </h1>
+            </div>
+            <img id=fan src="https://sports.inquirer.net/files/2021/11/FDOb_F2WYAAuizk.jpeg" alt="fan">
+            <h2>
+                Donaire refuses to engage in trash talk ahead of fight vs Gaballo
+            </h2>
+            <p id=weather>
+                Donaire (41-6) and Gaballo, the WBC interim bantamweight champion, are set to square off on December 11 in Carson, California for the Filipino legend’s first defense of his 118-pound title.
+                <p id=dongab>
+                    “Filipinos should be this way, respectable towards each other and not talking trash with one another,” said Donaire in Filipino during an interview with PlayItRight.TV. “Because once we step inside the ring then we’ll do everything we can to win.”
+                </p>
+                <a id=reed href="https://sports.inquirer.net/441479/donaire-refuses-to-engage-in-trash-talk-vs-gaballo-ahead-of-fight">Read More...</a>
+            </p>
+
+        </div>
+
+        <div id=content-middle>
+            <div id=middle-head>
+            <h1>
+                BASKETBALL
+                <img id=phone src="https://cdn.onlinewebfonts.com/svg/img_531585.png" alt="cloud">
+            </h1>
+            </div>
+            <h2>
+                Kia MVP Ladder: Key tests loom in award chase for Stephen Curry
+            </h2>
+            <p>
+                Curry scorched the Atlanta Hawks for an NBA-season-high 50 points Monday in a 127-113 victory,
+                 finishing a perfect 13 for 13 from the free throw line.
+                <p>
+                    Curry remains at No. 2 in this edition of the Kia Race to the MVP Ladder after leading Golden State to a record of 6-1.
+                    The stakes remain high headed into next week when the Warriors hit the road as they face Kevin Durant — the current leader in the Kia Race to the MVP Ladder 
+                    — and the Brooklyn Nets at the Barclays Center and the Chicago Bulls.
+                </p>
+            </p>
+            <p id=jobless>
+                <a id=rmore href="https://www.nba.com/news/kia-mvp-ladder-key-tests-loom-for-stephen-curry">Read More...</a>
+            </p>
+            
+        <div id=boastun>
+            <h2>
+                Toronto's Fred VanVleet fined for obscene gesture
+            </h2>
+            <p>
+                Toronto Raptors guard Fred VanVleet has been fined $15,000 for making an obscene gesture, announced today by Byron Spruell, 
+                President, League Operations. 
+            </p>
+            <p>
+                VanVleet was feeling it, knocking down a dagger 3 in the final seconds of the game to give the Raptors a lead they 
+                wouldn't surrender, taking him to 32 points on the night.
+                <a id=rmoore href="https://www.sportingnews.com/us/nba/news/fred-vanvleet-fined-sam-cassell-celebration/xchdy6ymv9251v38jmi0x0efm">Read More...</a>
+            </p>
+            </div>
+        </div>
+
+        <div id=content-right>
+            <div id=right-head>
+            <h1 id=sci>
+                FOOTBALL
+                <img id=tube src="https://image.flaticon.com/icons/png/512/53/53283.png" alt="testtube">
+            </h1>
+            </div>
+            <h2>
+                Mbappe scores four, France dumps Kazakhstan 8-0 to qualify in World Cup
+            </h2>
+
+            
+            <div id=penguin>
+                <img id=pingu src="https://sports.inquirer.net/files/2021/11/000_9RL7B2.jpg" alt="pingu">
+            </div>
+
+            <p id=pengwing>
+                    PARIS – Holders France ran riot to reach the 2022 World Cup finals with a match to spare after four goals from Kylian Mbappe helped them to an 8-0 home demolition of Kazakhstan in their Group D qualifier on Saturday.
+                    <p id=france>
+                    The result left France top of the group on 15 points from seven games, four ahead of second-placed Finland who they visit in their final match on Tuesday.
+                    </p>
+                <a id=francea href="https://sports.inquirer.net/441746/mbappe-scores-four-france-dumps-kazakhstan-8-0-to-qualify-in-world-cup">Read More...</a>
+            </p>
+    </div>
+
+
+    <div id=foot>
+        <h1 id=quickn>QUICK NEWS</h1>
+    </div>
+    <div id=footer>
+       <div id=ucantcme>
+        <p>
+            Famous actor and wrestler John Cena is still missing after doing his signature catchphrase "You Can't See Me" in front of a crowd
+       </p>
+       <p>
+        <a id=redmore href="#youcantseeme">Read more...</a>
+       </p>
+
+    </div>
+    <div id=elongatedmusk>
+        <p>
+            Lewis Hamilton disqualified from Brazil qualifying after DRS infringement
+        </p>
+        <p>
+            <a id=readmoreh href="https://www.formula1.com/en/latest/article.breaking-hamilton-disqualified-from-brazil-qualifying-after-drs-infringement.2YCYCpsnUQMcsUbN33fBB3.html">Read more...</a>
+        </p>
+    </div>
+    </div>
+</body>
+
